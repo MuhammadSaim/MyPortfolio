@@ -1,0 +1,278 @@
+// veriables 
+$rightSideBG: #3d3e42;
+$leftFontColor: #3d3e42;
+$leftSideBG: #fff;
+$opensans: 'Open Sans', sans-serif;
+*{
+	margin:0;
+	padding:0;
+	
+}
+::selection{
+	background-color: #1abc9c;
+	color: #fff;
+}
+.container{
+	display:flex;
+	width:100%;
+	
+	.left-side{
+		width: 60%;
+		background-color: $leftSideBG;
+		
+		.wrapper{
+			margin: 30px 20% 20px 20%;
+			width:100%;
+			.profile-image{
+				width:200px;
+				height: 200px;
+				background-color: $rightSideBG;
+				background: url('../images/muhammadsaim.jpg');
+				background-size:cover;
+				border-radius: 50%;
+				vertical-align:center;
+				border: 5px solid #1abc9c;
+			}//profile image
+			h1{
+				padding: 20px 0;
+				font-size: 2.5em;
+				font-family: $opensans;
+				line-height: 1em;
+				position: relative;
+				color:$leftFontColor;
+				&:after{
+					content: '';
+					width: 140px;
+					height: 3px;
+					background-color: #1abc9c;
+					position: absolute;
+					bottom:0 + 10px;
+					left:0;
+				}
+			}//ends h1 here
+			.contact{
+				display:flex;
+				padding: 30px 0 20px 0;
+				.contact-headings{
+					padding: 0px 40px 0 0;
+					ul{
+						list-style:none;
+						li{
+							font-family: $opensans;
+							font-size: 1.3em;
+							margin-bottom: 5px;
+							color:$leftFontColor;
+						}//edns li here
+					}//end ul here
+				}//ends contact-headings
+				
+				.contact-details{
+					padding: 0px 0px 0 20px;
+					ul{
+						list-style:none;
+						li{
+							font-family: $opensans;
+							margin-bottom: 5px;
+							color: lighten(black, 40);
+							font-weight: 100;
+							font-size: 1.3em;
+							a{
+								text-decoration:none;
+								color: lighten(black, 40);
+								&:hover{
+									color: lighten(black, 30);
+									text-decoration: underline;
+								}//ends a:hover here
+							}//ends a tag here
+						}//ends li here
+					}//ends ul here
+					
+				}//ends contact detail here
+
+			}//ends contact here
+			.about{
+				padding: 30px 0 20px 0;
+				p{
+					width:70%;
+					font-size: 1.2em;
+					font-family: $opensans;
+					font-weight: 300;
+					color: lighten(black, 30);
+					text-align:justify;
+					line-height:1.7em;
+					span{
+						color: black;
+						font-weight:400;
+					}
+				}//end p tag here
+			}//ends about here
+			
+			.social-link{
+				padding: 30px 0 20px 0;
+				display:flex;
+				width:100%;
+				ul{
+					list-style:none;
+					display:flex;
+					flex-wrap: wrap;
+					justify-content:space-between;
+					li{
+						margin-right:50px;
+						a{
+							font-size: 2em;
+							color:black;
+							transition: all .2s ease;
+							.fa-facebook:hover{
+								color:#4267B2;
+							}
+							.fa-twitter:hover{
+								color:#1B95E0;
+							}
+							.fa-github:hover{
+								color:lighten(black, 20);
+							}
+							.fa-instagram:hover{
+								  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+								  -webkit-background-clip: text;
+  								  -webkit-text-fill-color: transparent;
+							}
+							.fa-codepen:hover{
+								color:lighten(black, 20);
+							}
+						}//end a tag here
+					}//end li here
+				}//ends ul here
+			}//ends social-link here
+		}//wrapper ends here
+
+
+	}//left side ends here
+	
+	.right-side{
+		width:100%;
+		background-color: $rightSideBG;
+		.wrapper{
+			padding: 30px 20px 30px 60px;
+			h3{
+					color: #1abc9c;
+					font-family:$opensans;
+					font-size: 1.5em;
+					font-weight: 100;
+				}//ends h3 here
+			.exp-group{
+				display:flex;
+				padding: 20px 0;
+				.comp-name{
+					width: 50%;
+					h4{
+						color:#fff;
+						font-family: $opensans;
+						font-weight:100;
+						font-size:1.2em;
+						margin-bottom: 10px;
+					}//h4
+					p{
+						color: #9099a0;
+						font-weight:100;
+						font-size: 1em;
+						font-family:$opensans;
+					}//p 
+				}//comp-name
+				.job-desc{
+					h4{
+						color:#fff;
+						font-family: $opensans;
+						font-weight:100;
+						font-size:1.2em;
+						margin-bottom: 10px;
+					}//h4
+					p{
+						color: #9099a0;
+						font-size: 1em;
+						font-family:$opensans;
+						font-weight:100;
+						width:70%;
+						text-align:justify;
+					}//p
+				}//ends comp-desc
+			}//exp-group ends here
+			
+			.hobbie-skills{
+				display:flex;
+				padding: 40px 0;
+				.skills{
+					width:60%;
+					.skill-group{
+						h4{
+							color: #fff;
+							font-family: $opensans;
+							font-weight:100;
+							padding: 10px 0 5px 0;
+						}//h3
+						.skill{
+							width: 80%;
+							height: 10px;
+							background-color:#9099a0;
+							overflow:hidden;
+							.skill-progress{
+								background-color: #1abc9c;
+								height:100%;
+							}//skill-progress
+						}//skill
+					}//ends skills-group
+				}//skills
+				.hobbies{
+					width: 30%;
+					.hobbies-icon{
+						padding: 30px 0;
+						ul{
+							display:flex;
+							tex-align:center;
+							list-style:none;
+							li{
+								color: #1abc9c;
+								font-size:2.5em;
+								margin-right: 20px;
+							}
+						}//ul
+					}//end hobbies-icon here
+				}//ends hobbies
+			}//ends hobbie-skills here
+		}//ends wrapper here
+	} //right side ends here
+
+}//main container ends here
+
+.download{
+	width:20px;
+	height:20px;
+	background-color:#fff;
+	border-radius: 50%;
+	padding: 10px;
+	text-align:center;
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	a{
+		color: #1abc9c;
+	}
+}
+
+
+
+// media queries
+@media (max-width: 1024px){
+	.container{
+		flex-direction: column;
+		.left-side{
+			width:60%;
+			padding-left: 160px;
+		}
+	}
+	.download{
+		background-color: #1abc9c;
+		a{
+			color:white;
+		}
+	}
+}
