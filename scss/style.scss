@@ -21,13 +21,13 @@ $opensans: 'Open Sans', sans-serif;
 		background-color: $leftSideBG;
 		
 		.wrapper{
-			margin: 30px 20% 20px 20%;
+			margin: 30px 15% 20px 10%;
 			width:100%;
 			.profile-image{
 				width:200px;
 				height: 200px;
 				background-color: $rightSideBG;
-				background: url('../images/muhammadsaim.jpg');
+				background: url('https://i.ibb.co/Jjh09GX/20449014-1866443707007225-6967057319565598247-o.jpg');
 				background-size:cover;
 				border-radius: 50%;
 				vertical-align:center;
@@ -59,7 +59,7 @@ $opensans: 'Open Sans', sans-serif;
 						list-style:none;
 						li{
 							font-family: $opensans;
-							font-size: 1.3em;
+							font-size: 1.1em;
 							margin-bottom: 5px;
 							color:$leftFontColor;
 						}//edns li here
@@ -75,7 +75,7 @@ $opensans: 'Open Sans', sans-serif;
 							margin-bottom: 5px;
 							color: lighten(black, 40);
 							font-weight: 100;
-							font-size: 1.3em;
+							font-size: 1.1em;
 							a{
 								text-decoration:none;
 								color: lighten(black, 40);
@@ -152,7 +152,7 @@ $opensans: 'Open Sans', sans-serif;
 		width:100%;
 		background-color: $rightSideBG;
 		.wrapper{
-			padding: 30px 20px 30px 60px;
+			padding: 30px 20px 20px 40px;
 			h3{
 					color: #1abc9c;
 					font-family:$opensans;
@@ -162,8 +162,9 @@ $opensans: 'Open Sans', sans-serif;
 			.exp-group{
 				display:flex;
 				padding: 20px 0;
+				justify-content: space-between;
 				.comp-name{
-					width: 50%;
+					width: 35%;
 					h4{
 						color:#fff;
 						font-family: $opensans;
@@ -179,6 +180,7 @@ $opensans: 'Open Sans', sans-serif;
 					}//p 
 				}//comp-name
 				.job-desc{
+					width: 65%;
 					h4{
 						color:#fff;
 						font-family: $opensans;
@@ -191,7 +193,7 @@ $opensans: 'Open Sans', sans-serif;
 						font-size: 1em;
 						font-family:$opensans;
 						font-weight:100;
-						width:70%;
+						width:80%;
 						text-align:justify;
 					}//p
 				}//ends comp-desc
@@ -227,7 +229,7 @@ $opensans: 'Open Sans', sans-serif;
 						padding: 30px 0;
 						ul{
 							display:flex;
-							tex-align:center;
+							text-align:center;
 							list-style:none;
 							li{
 								color: #1abc9c;
